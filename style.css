@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@300;400&family=Signika+Negative:wght@300&family=Spectral:wght@300&display=swap');
+
+body {
+    background-color: rgb(11, 10, 10);
+   color: white;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color:  rgb(49, 48, 48);
+    font-family: 'varela',sans-serif;
+    display: block;
+    height: 58px;
+    width: 1464px;
+    position: sticky;
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 10px 10px 10px black;
+    padding:6px;
+}
+li
+{
+    float: left;
+}
+li ul
+{
+    display: none;
+}
+li:hover ul
+{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+#searchbar{
+    text-decoration: none;
+}
+#searchbar input{
+    border-radius: 15px;
+    height: 25px;
+}
+.topnav{
+    overflow: hidden;
+}
+.topnav a{
+    display: flex;
+    float:left;
+    color: white;
+    text-align: center;
+    padding: 14px  11px 17px;
+    font-size: 20px;
+    text-decoration: none;  
+}
+.topnav-right {
+    float: right;
+    text-decoration: none;
+  }
+ 
+  .topnav li  a:not(.brand):hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 25px;
+    box-shadow: rgb(199, 177, 177);
+  }
+  .topnav-right a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 25px;
+    box-shadow: rgb(199, 177, 177);
+  }
+  
+  .topnav a.active {
+    background-color: #0c0c0c;
+    color: white;
+    border-radius: 25px;
+  }
+  .topnav a:not(.brand).hover {
+    background-color: #0c0c0c;
+    color: white;
+  
+  }
+
+.brand img{
+     width: 38px;
+     height: 38px;
+     padding: 0px 0px ;
+     text-decoration: none;    
+}
+.brand{
+    display: flex;  
+    align-items: center;
+    margin-left: 15px;  
+}
+.dropdown{
+    display: none;
+    position: relative;
+    background-color: #646262;
+    min-width: 160px;
+
+  }
+  .dropdown a {
+    
+    color: rgb(184, 178, 178);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+  }
+
+.container{
+    min-height: 55vh;
+    background-color:rgb(209, 39, 39);
+    color: white;
+    font-family: 'varela Round', sans-serif;
+    display: flex;
+    margin:  2px;
+    padding: 50px;
+    background-image: url(bg.jpg);
+   background-repeat: no-repeat;
+   width: inherit;
+   height: auto;
+   
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.icons{
+margin-top: -20px;
+}
+.icons i{
+    cursor: pointer;
+}
+#previous {
+    margin-right: 20px;
+}
+#next {
+    margin-left : 20px;
+}
+#mute
+{
+    margin-left: 20px;
+}
+#highvolume{
+    margin-right: 20px;
+}
+#shuffle
+{
+    margin-right: 20px;
+}
+
+#shuffle.active {
+    color: burlywood; /* Color for active shuffle mode */
+  }
+#muteButton{
+    background-color: #0c0c0c;
+    margin-left: 0px;
+}
+
+#myprogressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+.songitemcontainer{
+    margin-top: 74px;
+}
+.songItem img{
+ width: 45px;  
+ margin: 0 23px ; 
+ border-radius: 35px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    margin-top: 25x;
+    font-family: 'varela Round', sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition:opacity 0.2s ease-in  ;
+}
+.container h1{
+    float: left;
+}
+
+ /* Upgrade style */
+.header {
+    text-align: center;
+}
+.upgradeplan{
+    
+    text-align: center;
+}
+.container1, .container2{
+    background-color: #2b5453;
+    height: 420px;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 69px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+header {
+    padding: 0px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .upgradeplan {
+    padding: 20px;
+  }
+  
+  h2{   
+     margin-top: 96px;
+    text-align: initial;
+    margin-left: 39px;
+  }
+  h3{
+    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-right: 102px;
+    background-color: #476d6f;
+    width: 450px;
+    height: 40px;
+    margin-left: 29px;
+    border-radius: 15px;
+  }
+    h5 {
+        margin-left: 705px;
+        margin-top: 25px;
+        border-radius: 34px;
+    
+  }
+  header h5{
+    text-align: initial;
+    margin-left: 44px;
+  }
+  header h2{
+    margin-top: 9px;
+    text-align: initial;
+    margin-left: 45px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #476d6f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 125px;
+    margin-top: 25px;
+    border-radius: 34px;
+}
+  
+  button:hover {
+    background-color: #1b468c;
+  }
+  
+ /*  css style for podcast */
+
+ .navpodcast{
+    background-color:  rgb(11, 10, 10);
+    font-family: 'varela',sans-serif;
+    display: block;
+    height: 58px;
+    width: 1464px;
+    margin-top: 20px;
+    margin-left: 500px;
+    color: white;
+    justify-content: center;
+}
+li a{
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 10px 10px 10px black;
+    padding:15px;
+    color: white;
+
+}
+.podcast-list img{
+    width: 200px;  
+    height: 200px;
+    margin: 0 23px ; 
+    border-radius: 115px;
+    padding: 14px;
+    
+}
+.podcast-list{
+    display: flex;
+    padding: 25px;
+}
+   .container h1{
+    margin-left: 121px;
+   }
+.podcastName{
+    margin-left: 85px;
+}
+.podcastPlay{
+    background-color: white;
+}
+ /*  css style for signup */
+
+
+ #s1h h3{
+    text-align: center;
+
+ }
+
+ .gohome{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin-top: 20px;
+  }
+  .gohome button a{
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Media queries for responsive design */
+  @media (max-width: 600px) {
+    .container1,
+    .container2 {
+      flex-direction: column;
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }

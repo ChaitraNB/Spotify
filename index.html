@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="//spotify-copy/index.html"></form>
+    <!-- navigation bar -->
+        <nav>        
+            <div class="topnav">
+              <a class="brand"> <img src="logo.png" alt="Spotify">Spotify</a>
+              <ul>
+                <li><a  class="active" href="/index.html" ><i class="fa-solid fa-house"></i>Home</a></li>                 
+                <li><a href="/podcast.html"><i class="fa-solid fa-podcast"></i> Podcast</a></li>                
+                <li><a href="#Library"><i class="fa-solid fa-headphones-simple"></i>Library </a>
+                        <ul>
+                        <li> <a href="#History">History</a></li>
+                        <li> <a href="#Songs">Songs</a></li>
+                        <li> <a href="#Albums">Albums</a></li>
+                        <li> <a href="#Artist">Artist</a></li>
+                        
+                        </ul>          
+                </li>               
+            </ul>             
+               <div class="topnav-right">             
+                <a href="#Search" id="searchbar"> <i class="fa-solid  fa-magnifying-glass"></i><input class="fa-1x" type="text" name="Search" placeholder="Search"></a> 
+                <a href="/upgrade.html"><i class="fa-solid fa-money-check-dollar"></i>Upgrade</a>
+                <a href="/signup.html"><i class="fa-solid fa-user"></i>SignUp</a>
+            </div>      
+        </div>
+       
+        </nav>
+<!-- conatainer -->
+        <div class="container">
+            <div class="songList">
+                <h1>Best of NCS-No Copyright Sounds</h1>  
+                <div class="songitemcontainer">
+                    <div class="songItem">
+                        <img  alt="1" >
+                        <span class="songName">Pyar Kiya To Darna Kya” Mughal-E-Azam (1960)</span>
+                        <span class="timestamp"> 04:34 <i id="0" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Dheere Dheere Se Meri Zindagi Mein Aana” Aashiqui (1990)</span>
+                        <span class="timestamp"> 04:54 <i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Nazar Ke Samne Jigar Ke Paas” Ashiqui (1990)</span>
+                        <span class="timestamp"> 04:22 <i id="2" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Dil Ka Aalam” Aashiqui (1990)</span>
+                        <span class="timestamp"> 04:45 <i id="3" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Mujhe Neend Na Aaye” Dil (1990)</span>
+                        <span class="timestamp"> 05:02 <i id="4" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Tumhe Apna Banane Ki Kasam” Sadak (1991)</span>
+                        <span class="timestamp"> 04:12 <i id="5" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Choodi Baji Hai” Yes Boss (1997)</span>
+                        <span class="timestamp"> 04:24 <i id="6" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Subah Se Lekar” Mohra (1994)</span>
+                        <span class="timestamp"> 04:55 <i id="7" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Aaja Nachle- Aaja Nachle (2007)</span>
+                        <span class="timestamp"> 04:04 <i id="8" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1" >
+                        <span class="songName">Pinga- Bajirao Mastani (2015)</span>
+                        <span class="timestamp"> 05:05 <i id="9" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+        
+        <div class="bottom">
+            <input type="range" class="range" id="myprogressBar" value="0" min="0" max="100">
+            <div class="icons">
+              <!--   fontawesome icons -->
+              <i class=" fa-2x fa-solid fa-shuffle fa-shuffle-active" id="shuffle"></i>
+              <i class="fa-2x fa-solid fa-backward-step" id="previous"></i> 
+              <i class="fa-2x fa-solid fa-circle-play" id="masterPlay"></i>
+              <i class="fa-2x fa-solid fa-forward-step" id="next"></i>
+              <button style="background-color: black;" id="muteButton" onclick="toggleMute()">
+                <i id="muteIcon" class="fa-solid fa-2x fa-volume-up"></i>
+              </button>
+              
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="1" id="gif"> <span id="masterSongName">Oo Antiya mava-Pushpa</span>
+            </div>
+        </div>
+    
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d25916ec27.js" crossorigin="anonymous"></script>
+</body>
+</html>

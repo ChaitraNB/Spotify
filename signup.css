@@ -1,0 +1,89 @@
+body {
+    display: initial;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    
+  }
+  
+  .container4 {
+    width: 504px;
+    background-color: #3a3737;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+  #sh1 h1{
+    padding: 0px;
+  }
+  #sh1 h3{
+    margin-top: -35px;
+  }
+  h1, h3 {
+    text-align: center;
+  }
+  
+  #t1 {
+    margin: 0 auto;
+  }
+  
+  #t1 td {
+    padding: 10px;
+  }
+  
+  #t1 input[type="text"],
+  #t1 input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  #t1 input[type="submit"] {
+    width: 110%;
+    padding: 10px;
+    background-color: #4ca2af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 105px;
+    margin-top: 10px;
+  }
+  
+  #t1 input[type="submit"]:hover {
+    background-color: #0f668b;
+  }
+  
+  #t1 p {
+    text-align: center;
+  }
+  
+  #t1 a {
+    color: #5eb4ac;
+    text-decoration: none;
+  }
+  .gohome{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin-top: 20px;
+  }
+  button{
+    text-align: center;
+    width: 70px;
+    margin-left: 71px;
+    background-color: #4ca2af;
+  }
+  button a{
+    text-decoration: none;
+  color: white;
+  }
+
+  
